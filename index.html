@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agenda · Wed Nov 18, 2026 · Storm Studio EL</title>
+<style>
+:root{--cran:#8b2b1f;--pump:#d9732b;--gold:#e9b949;--cream:#fbf3e4;--brown:#4a2e1b;--sage:#6b7a4b;--ink:#2b1d14;--card:#fffaf0}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--cream);color:var(--ink);line-height:1.4}
+header{background:linear-gradient(135deg,var(--cran),#b8441f 60%,var(--pump));color:#fff;padding:18px 22px;position:relative;overflow:hidden}
+header svg.leaf{position:absolute;opacity:.18;pointer-events:none}
+.wrap{max-width:1180px;margin:0 auto;position:relative}
+.top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.9}
+h1{margin:4px 0 2px;font-size:clamp(24px,3.6vw,40px);font-weight:900;line-height:1.05}
+.sub{font-size:15px;opacity:.95}
+.clock{text-align:right}
+.clock .now{font-size:34px;font-weight:900;font-variant-numeric:tabular-nums;line-height:1}
+.clock .date{font-size:13px;opacity:.9}
+.tog{margin-top:8px;display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap}
+.tog button{border:2px solid #fff;background:transparent;color:#fff;border-radius:999px;padding:5px 14px;font-weight:800;cursor:pointer}
+.tog button.on{background:#fff;color:var(--cran)}
+main{padding:16px 22px 40px}
+.grid{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:2px solid var(--brown);border-radius:14px;padding:14px 16px;box-shadow:4px 4px 0 var(--gold)}
+.card h2{margin:0 0 6px;font-size:18px;color:var(--cran);display:flex;align-items:center;gap:8px}
+.eq{font-size:20px;font-weight:900;color:var(--brown)}
+.seg{display:grid;grid-template-columns:86px 1fr 150px;gap:10px;align-items:center;border-top:1.5px dashed #c9a86a;padding:10px 0}
+.seg:first-of-type{border-top:0}
+.seg .t{font-weight:900;color:var(--cran);font-size:15px}
+.seg .t small{display:block;font-weight:700;color:var(--pump);font-size:12px}
+.seg h3{margin:0;font-size:16px;color:var(--brown)}
+.seg p{margin:2px 0 0;font-size:13.5px}
+.seg a{color:var(--cran);font-weight:700}
+.timer{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.timer .n{font-size:26px;font-weight:900;font-variant-numeric:tabular-nums;color:var(--brown);min-width:70px;text-align:right}
+.timer button{border:0;background:var(--pump);color:#fff;border-radius:8px;padding:5px 10px;font-weight:800;cursor:pointer;font-size:12px}
+.timer button.stop{background:var(--sage)}
+.seg.active{background:#fff2d6;border-radius:10px;padding-left:8px;padding-right:8px;margin:0 -8px}
+.seg.done .n{color:#9a9a9a}
+ul{margin:4px 0 0 18px;padding:0}
+li{margin:3px 0;font-size:13.5px}
+.std{font-size:12.5px}
+.std b{color:var(--cran)}
+.chip{display:inline-block;background:#fde8c8;color:var(--brown);border-radius:999px;padding:2px 9px;font-size:12px;font-weight:700;margin:2px 2px 0 0}
+.tech{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;margin-top:6px}
+.tech a{display:block;background:#fff;border:2px solid var(--pump);border-radius:12px;padding:10px 12px;text-decoration:none;color:var(--ink)}
+.tech a b{display:block;color:var(--cran);font-size:15px}
+.tech a span{font-size:12.5px}
+.tech a em{display:block;font-size:11.5px;color:var(--sage);font-style:normal;margin-top:4px;font-weight:700}
+.gr{font-size:13px;color:var(--brown)}
+footer{text-align:center;font-size:12px;color:#7a5a3a;padding:14px}
+[data-es]{display:none}
+body.es [data-en]{display:none}
+body.es [data-es]{display:inline}
+body.es p[data-es],body.es li[data-es],body.es div[data-es],body.es h3[data-es]{display:block}
+</style>
+</head>
+<body>
+<header>
+<svg class="leaf" style="right:-20px;top:-30px" width="260" height="260" viewBox="0 0 100 100"><path d="M50 5 C70 25 95 35 90 60 C85 85 60 95 50 95 C40 95 15 85 10 60 C5 35 30 25 50 5Z M50 20 L50 90 M50 45 L30 35 M50 45 L70 35 M50 65 L28 58 M50 65 L72 58" fill="#fff" stroke="#fff" stroke-width="3"/></svg>
+<svg class="leaf" style="left:-30px;bottom:-60px" width="220" height="220" viewBox="0 0 100 100"><path d="M50 5 C70 25 95 35 90 60 C85 85 60 95 50 95 C40 95 15 85 10 60 C5 35 30 25 50 5Z" fill="#fff"/></svg>
+<div class="wrap top">
+<div>
+<div class="kicker">Storm Studio · Laurel High School EL 9–12 · Week 15 · Day 3</div>
+<h1><span data-en>Wednesday, November 18 · Bend It Like Science</span><span data-es>Miércoles 18 de noviembre · Bend It Like Science</span></h1>
+<div class="sub"><span data-en>🍂 Thanksgiving week · 90-minute block: 60 min four domains + 30 min tech rotation</span><span data-es>🍂 Semana de Acción de Gracias · Bloque de 90 min: 60 min de cuatro dominios + 30 min de tecnología</span></div>
+</div>
+<div class="clock"><div class="now" id="now">--:--</div><div class="date">Wed · Nov 18, 2026</div>
+<div class="tog"><button class="on" onclick="setLang('en',this)">English</button><button onclick="setLang('es',this)">Español</button><button onclick="say()">🔊</button></div></div>
+</div>
+</header>
+
+<main class="wrap">
+<div class="grid">
+<div>
+<div class="card">
+<h2>🦃 <span data-en>Today's agenda</span><span data-es>Agenda de hoy</span> <span class="gr" style="margin-left:auto;font-weight:600">Press ▶ to start each block</span></h2>
+
+<div class="seg" data-min="5"><div class="t">5 min<small>Do Now</small></div><div><h3 data-en>Turkey Trot warm-up: Color the Curve</h3><h3 data-es>Calentamiento: Colorea la curva</h3><p data-en>Grab the grammar coloring sheet. Color 6 spaces while the music plays. Word bank is on the board.</p><p data-es>Toma la hoja de colorear. Colorea 6 espacios mientras suena la música. El banco de palabras está en la pizarra.</p></div><div class="timer"><div class="n">5:00</div><button onclick="startSeg(this)">▶ Start</button></div></div>
+
+<div class="seg" data-min="15"><div class="t">15 min<small>Reading</small></div><div><h3 data-en>Read &amp; compare: free kick vs. curveball</h3><h3 data-es>Leer y comparar: tiro libre vs. curva</h3><p data-en>Reread Text 3. Answer reading items 5–9 (compare Text A and Text B). Underline every <i>both</i>, <i>however</i>, <i>while</i> you find.</p><p data-es>Vuelve a leer el Texto 3. Responde las preguntas 5–9 (compara los Textos A y B). Subraya cada <i>both</i>, <i>however</i>, <i>while</i> que encuentres.</p></div><div class="timer"><div class="n">15:00</div><button onclick="startSeg(this)">▶ Start</button></div></div>
+
+<div class="seg" data-min="10"><div class="t">10 min<small>Listening</small></div><div><h3 data-en>Listen twice: "Two curving balls"</h3><h3 data-es>Escucha dos veces: "Dos pelotas que curvan"</h3><p data-en>Teacher reads the talk twice without stopping. Answer items 1–4. Signal-word hunt: raise a hand when you hear <i>however</i>.</p><p data-es>El maestro lee la charla dos veces sin parar. Responde 1–4. Levanta la mano cuando escuches <i>however</i>.</p></div><div class="timer"><div class="n">10:00</div><button onclick="startSeg(this)">▶ Start</button></div></div>
+
+<div class="seg" data-min="15"><div class="t">15 min<small>Writing</small></div><div><h3 data-en>Compare &amp; contrast research: soccer vs. another sport</h3><h3 data-es>Investigación de comparación: fútbol vs. otro deporte</h3><p data-en>Source A is Text 3. Pick Source B: the baseball curveball (on the sheet) or a sport you know (basketball, tennis, volleyball, football). Fill the chart, sort SAME / DIFFERENT in the Venn, then write in your lane with <b>both</b>, <b>however</b>, <b>while</b>.</p><p data-es>La Fuente A es el Texto 3. Elige la Fuente B: la curva de béisbol (en la hoja) o un deporte que conozcas (básquetbol, tenis, voleibol, fútbol americano). Completa el cuadro, organiza IGUAL / DIFERENTE en el Venn y escribe en tu carril con <b>both</b>, <b>however</b>, <b>while</b>.</p></div><div class="timer"><div class="n">15:00</div><button onclick="startSeg(this)">▶ Start</button></div></div>
+
+<div class="seg" data-min="15"><div class="t">15 min<small>Speaking</small></div><div><h3 data-en>Say it: both … however …</h3><h3 data-es>Dilo: both … however …</h3><p data-en>Partner A explains why both balls curve; Partner B gives one difference. Switch. Then record Question 15 (60 sec) on Snorkl or Vocaroo.</p><p data-es>A explica por qué curvan las dos pelotas; B dice una diferencia. Cambien. Luego graba la pregunta 15 (60 s) en Snorkl o Vocaroo.</p></div><div class="timer"><div class="n">15:00</div><button onclick="startSeg(this)">▶ Start</button></div></div>
+
+<div class="seg" data-min="30"><div class="t">30 min<small>Tech rotation</small></div><div><h3 data-en>Interactive ELPA21 tasks · pick your station</h3><h3 data-es>Tareas interactivas ELPA21 · elige tu estación</h3><p data-en>Headphones on. Finish 2 stations. Turn in links on the form before the timer ends.</p><p data-es>Audífonos puestos. Termina 2 estaciones. Entrega tus enlaces en el formulario antes de que termine el tiempo.</p>
+<div class="tech">
+<a href="https://radan55.github.io/Stiormsoccerwednesday/" target="_blank"><b>⚡ Storm Soccer Wednesday</b><span data-en>Listen · Read · Arcade · auto-graded Writing · Speak</span><span data-es>Escuchar · Leer · Arcade · Escritura autocorregida · Hablar</span><em>All lanes · 10–12 min</em></a>
+<a href="https://radan55.github.io/stormsoccerspeaking/" target="_blank"><b>🎙 ELPA21 Speaking: The Goalkeeper's Save</b><span data-en>5 timed questions · record on Snorkl or Vocaroo · turn in on the form</span><span data-es>5 preguntas con tiempo · graba en Snorkl o Vocaroo · entrega en el formulario</span><em>Levels 2–4 · 12–15 min</em></a>
+<a href="https://radan55.github.io/Githublisteningactivity/" target="_blank"><b>🎧 Listening: A Change of Plans</b><span data-en>ELPA21-style listening with auto-check</span><span data-es>Escucha estilo ELPA21 con autocorrección</span><em>Emerging + Progressing · 8–10 min</em></a>
+<a href="https://form.jotform.com/263208453496059" target="_blank"><b>📨 Turn in your Vocaroo links</b><span data-en>Name · period · 5 links · submit</span><span data-es>Nombre · periodo · 5 enlaces · enviar</span><em>Last 3 minutes</em></a>
+</div></div><div class="timer"><div class="n">30:00</div><button onclick="startSeg(this)">▶ Start</button></div></div>
+</div>
+</div>
+
+<div>
+<div class="card"><h2>❓ <span data-en>Essential question</span><span data-es>Pregunta esencial</span></h2>
+<p class="eq" data-en>How can we use science to explain what we see in sports — and compare two examples clearly?</p>
+<p class="eq" data-es>¿Cómo usamos la ciencia para explicar lo que vemos en los deportes y comparar dos ejemplos con claridad?</p></div>
+
+<div class="card" style="margin-top:14px"><h2>🎯 <span data-en>Objectives</span><span data-es>Objetivos</span></h2>
+<ul>
+<li data-en><b>Content:</b> I can explain why a spinning ball curves (spin → air speed → pressure → push) and compare the free kick with the curveball.</li>
+<li data-es><b>Contenido:</b> Puedo explicar por qué una pelota que gira se curva y comparar el tiro libre con la curva de béisbol.</li>
+<li data-en><b>Language:</b> I can research two sports and compare them in writing and speech with <i>both, however, while, unlike</i>, giving a reason with <i>because</i>.</li>
+<li data-es><b>Lenguaje:</b> Puedo investigar dos deportes y compararlos al escribir y hablar con <i>both, however, while, unlike</i>, dando una razón con <i>because</i>.</li>
+<li data-en><b>Exit ticket:</b> Two sentences: one SAME thing with <i>both</i>, one DIFFERENT thing with <i>however</i>, using <i>spin</i> or <i>pressure</i>.</li>
+<li data-es><b>Boleto de salida:</b> Dos oraciones: algo IGUAL con <i>both</i> y algo DIFERENTE con <i>however</i>, usando <i>spin</i> o <i>pressure</i>.</li>
+</ul></div>
+
+<div class="card" style="margin-top:14px"><h2>📋 <span data-en>Standards</span><span data-es>Estándares</span></h2>
+<p class="std"><b>MS CCR ELA (9–10):</b> RI.9.1 cite evidence · RI.9.4 word meaning in context · RI.9.9 compare two texts on a topic · W.9.2 explanatory (compare/contrast) writing · W.9.7 short research · W.9.1 claim with reasons · SL.9.1 collaborative discussion · L.9.1 conventions</p>
+<p class="std" style="margin-top:6px"><b>MS ELP Standards (9–12):</b> 1 construct meaning from text · 2 participate in exchanges · 3 speak about topics · 4 claims with reasons · 5 research and compare · 8 word meaning · 9 clear sentences · 10 clauses and connectors</p>
+<p class="std" style="margin-top:6px"><b>ELPA21 domains today:</b> <span class="chip">Listening</span><span class="chip">Reading</span><span class="chip">Writing</span><span class="chip">Speaking</span></p>
+<p class="std" style="margin-top:6px"><b>Science link (MS CCRS):</b> forces and motion — unbalanced forces change motion.</p></div>
+
+<div class="card" style="margin-top:14px"><h2>🍁 <span data-en>Gratitude minute</span><span data-es>Minuto de gratitud</span></h2>
+<p data-en style="margin:0;font-size:13.5px">Last 60 seconds: tell your partner one thing you are thankful for, in English, with <i>because</i>. <br><i>I am thankful for … because …</i></p>
+<p data-es style="margin:0;font-size:13.5px">Últimos 60 segundos: dile a tu compañero una cosa por la que estás agradecido, en inglés, con <i>because</i>.</p>
+<div class="timer" style="align-items:flex-start;margin-top:6px"><div class="n" style="text-align:left">1:00</div><button onclick="startMini(this,60)">▶ 1 minute</button></div></div>
+</div>
+</div>
+</main>
+<footer>Storm Studio · Laurel High School EL 9–12 · Week 15 · Wednesday, November 18, 2026 · Happy Thanksgiving week 🦃</footer>
+
+<script>
+function tick(){const d=new Date();document.getElementById('now').textContent=d.toLocaleTimeString([], {hour:'numeric',minute:'2-digit'});}
+tick();setInterval(tick,15000);
+function setLang(l,b){document.body.classList.toggle('es',l==='es');document.querySelectorAll('.tog button').forEach(x=>x.classList.remove('on'));b.classList.add('on');}
+let cur=null;
+function fmt(s){return Math.floor(s/60)+':'+String(s%60).padStart(2,'0');}
+function startSeg(btn){
+  const seg=btn.closest('.seg'); const n=seg.querySelector('.n'); const mins=+seg.dataset.min;
+  if(cur&&cur.seg===seg){clearInterval(cur.iv);cur=null;btn.textContent='▶ Start';btn.classList.remove('stop');return;}
+  if(cur){clearInterval(cur.iv);cur.seg.classList.remove('active');cur.seg.classList.add('done');cur.btn.textContent='▶ Start';cur.btn.classList.remove('stop');}
+  document.querySelectorAll('.seg').forEach(s=>s.classList.remove('active'));
+  seg.classList.add('active');seg.classList.remove('done');
+  let s=mins*60;n.textContent=fmt(s);btn.textContent='■ Stop';btn.classList.add('stop');
+  const iv=setInterval(()=>{s--;n.textContent=fmt(s);if(s<=0){clearInterval(iv);n.textContent='0:00';seg.classList.add('done');btn.textContent='▶ Restart';btn.classList.remove('stop');chime();cur=null;}},1000);
+  cur={seg,iv,btn};
+}
+function startMini(btn,secs){const n=btn.previousElementSibling;let s=secs;n.textContent=fmt(s);const iv=setInterval(()=>{s--;n.textContent=fmt(s);if(s<=0){clearInterval(iv);chime();}},1000);}
+function chime(){try{const a=new (window.AudioContext||window.webkitAudioContext)();[0,.25,.5].forEach((t,i)=>{const o=a.createOscillator(),g=a.createGain();o.frequency.value=[660,880,1100][i];o.connect(g);g.connect(a.destination);g.gain.setValueAtTime(.3,a.currentTime+t);g.gain.exponentialRampToValueAtTime(.001,a.currentTime+t+.4);o.start(a.currentTime+t);o.stop(a.currentTime+t+.45);});}catch(e){}}
+function say(){if(!window.speechSynthesis)return;speechSynthesis.cancel();const es=document.body.classList.contains('es');const txt=[...document.querySelectorAll('.seg')].map(s=>[...s.querySelectorAll(es?'[data-es]':'[data-en]')].map(e=>e.innerText).join('. ')).join('. ');const u=new SpeechSynthesisUtterance(txt);u.lang=es?'es-US':'en-US';u.rate=.95;const re=new RegExp('^'+u.lang.slice(0,2),'i');const v=speechSynthesis.getVoices().find(v=>re.test(v.lang)&&!/Bells|Zarvox|Bad News|Boing|Bubbles|Cellos|Deranged|Good News|Hysterical|Pipe Organ|Trinoids|Whisper|Wobble/i.test(v.name));if(v)u.voice=v;speechSynthesis.speak(u);}
+if(window.speechSynthesis)speechSynthesis.getVoices();
+</script>
+</body>
+</html>
